@@ -35,7 +35,7 @@ perso_largeur = 32
 perso_hauteur = 32
 perso_x = 225
 perso_y = 225
-vitesse = 1
+vitesse = 0.1
 
 #boucle principal du jeu
 running = 1
@@ -75,7 +75,7 @@ while running:
             perso_y -= vitesse
     
 
-    screen.fill((110, 55, 10))
+    screen.fill((62, 142, 10))
     for i in range (tree_nbr):
         screen.blit(tree, (forrest[i][0] - camera_x, forrest[i][1] - camera_y)) # On affiche les arbres dans des positions random
     screen.blit(current_perso, (player_screen_x, player_screen_y)) # affichage du personnage au centre de l'ecran si on a pas atteint la position limite de l'ecran
